@@ -1,0 +1,88 @@
+/* public/style.css */
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+    overflow: hidden;
+    font-family: 'VT323', monospace; /* Kept the retro font, it fits your style well */
+    height: 100vh;
+    width: 100vw;
+}
+
+/* --- MATRIX BACKGROUND --- */
+#matrix {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    opacity: 0.85; /* Your requested opacity */
+}
+
+/* --- TERMINAL CONTAINER --- */
+.terminal {
+    position: relative;
+    z-index: 2;
+    color: #00ff9c; /* Your specific green */
+    padding: 24px;
+    height: 100vh;
+    width: 100%;
+    overflow-y: auto;
+    font-size: 1.4rem; /* Adjusted for readability */
+    line-height: 1.6;
+    text-shadow: 0 0 6px rgba(0, 255, 140, 0.8); /* Your glow effect */
+}
+
+/* --- OUTPUT STYLING --- */
+#output {
+    white-space: pre-wrap;
+    word-break: break-word;
+    margin-bottom: 20px;
+}
+
+/* --- INPUT LINE --- */
+.input-line {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.prompt {
+    color: #00ff9c;
+    margin-right: 10px;
+    white-space: nowrap;
+    text-shadow: 0 0 6px rgba(0, 255, 140, 0.8);
+}
+
+input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #00ff9c; /* Matching color */
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    caret-color: #00ff9c;
+    width: 100%;
+    text-shadow: 0 0 6px rgba(0, 255, 140, 0.8);
+}
+
+/* --- GLITCH EFFECT FOR ERRORS --- */
+.glitch {
+    color: #ff3333 !important;
+    text-shadow: 2px 0 #fff, -2px 0 #ff0000;
+    animation: glitch 0.2s infinite;
+}
+
+@keyframes glitch {
+    0% { transform: translate(0) }
+    20% { transform: translate(-2px, 2px) }
+    40% { transform: translate(-2px, -2px) }
+    60% { transform: translate(2px, 2px) }
+    80% { transform: translate(2px, -2px) }
+    100% { transform: translate(0) }
+}

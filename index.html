@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>DJ Terminal</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+
+<canvas id="matrix"></canvas>
+
+<div class="terminal">
+  <div id="output"></div>
+
+  <div class="input-line">
+    <span class="prompt">DJ@portfolio:~$</span>
+    <input id="input" autofocus />
+    <span class="cursor"></span>
+  </div>
+</div>
+
+<script type="module" src="script.js"></script>
+</body>
+</html>
