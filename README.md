@@ -4,6 +4,10 @@ A fully interactive **terminal-style personal portfolio** built using **HTML, CS
 Inspired by hacker terminals and retro interfaces, this project simulates a real command-line experience inside the browser.
 
 ---
+<p align="center">
+  <img src="Data/demo.png" width="850">
+</p>
+---
 
 ## 🚀 Features
 
